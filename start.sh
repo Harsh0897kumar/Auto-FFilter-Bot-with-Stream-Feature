@@ -5,12 +5,12 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/VJBots/VJ-FILTER-BOT.git /VJ-FILTER-BOT 
+  git clone https://github.com/Harsh0897kumar/Auto-FFilter-Bot-with-Stream-Feature.git /Auto-FFilter-Bot-with-Stream-Feature 
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
-  git clone $UPSTREAM_REPO /VJ-FILTER-BOT 
+  git clone $UPSTREAM_REPO /Auto-FFilter-Bot-with-Stream-Feature 
 fi
-cd /VJ-FILTER-BOT 
+cd /Auto-FFilter-Bot-with-Stream-Feature 
 pip3 install -U -r requirements.txt
 echo "Starting Bot...."
 python3 bot.py
